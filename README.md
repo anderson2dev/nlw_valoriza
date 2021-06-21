@@ -11,9 +11,10 @@
 
 <div>
 <h3> Descrição: </h3>
+<hr/>
 <p> Projeto contendo o material desenvolvido durante a next level week: Together da rocket seat </p>
 <!-- TODO: MELHORAR A DESCRIÇÃO DO PROJETO -->
-<table>
+<table style="margin-right: auto; margin-left: auto">
     <tr> <th colspan="3"> Routes and resources: </th> </tr>
     <tr>
         <th> route </th>
