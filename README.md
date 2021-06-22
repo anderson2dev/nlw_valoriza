@@ -10,8 +10,15 @@
         <th> route </th>
         <th> method </th>
         <th> description </th>
+        <th> Returned data </th>
     </tr>
     <!-- TODO: Add rotas, metodos http e descrição das operações da api -->
+    <tr>
+        <td> /users</td>
+        <td> POST </td>
+        <td> Creates a new user </td>
+        <td> The data of the newly created user  </td>
+    </tr>
 </table>
 </div>
 

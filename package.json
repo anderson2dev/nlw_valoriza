@@ -6,16 +6,30 @@
   "repository": "https://github.com/anderson2dev/nlw_valoriza",
   "author": "Anderson Loiola",
   "scripts": {
-    "dev": "yarn ts-node-dev src/server.ts"
+    "dev": "yarn ts-node-dev src/server.ts",
+    "typeorm": "yarn ts-node-dev node_modules/typeorm/cli",
+    "migration:create": "yarn typeorm migration:create -n",
+    "migration:run": "yarn typeorm migration:run",
+    "migration:revert": "yarn typeorm migration:revert",
+    "entity:create": "yarn typeorm entity:create -n"
   },
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/express": "^4.17.12",
+    "@types/node": "^15.12.4",
+    "@types/uuid": "^8.3.0",
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.3.4"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.34",
+    "uuid": "^8.3.2"
   }
 }

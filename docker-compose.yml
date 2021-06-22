@@ -1,0 +1,10 @@
+version: "3"
+
+services: 
+    database:
+        image: "postgres"
+        container_name: "nlw_valoriza_db"
+        env_file: 
+            - "./POSTGRES_DB.env"
+        ports: 
+            - 6060:5432
