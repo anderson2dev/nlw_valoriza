@@ -5,7 +5,7 @@
 <p> Projeto contendo o material desenvolvido durante a next level week: Together da rocket seat, o nlw valoriza é uma api que tem como objetivo tornar o ambiente de trabalho mais amigável e produtivo permitindo que os colaboradores de uma organização possam compartilhar feedbacks entre si </p>
 <!-- TODO: MELHORAR A DESCRIÇÃO DO PROJETO -->
 <table style="margin-right: auto; margin-left: auto">
-    <tr> <th colspan="3"> Routes and resources: </th> </tr>
+    <tr> <th colspan="4"> Routes and resources: </th> </tr>
     <tr>
         <th> route </th>
         <th> method </th>
