@@ -9,14 +9,13 @@ export class CreateUserController {
         const createUserService = new CreateUserService();
         try {
             const createdUser = await createUserService.execute({name, email, password, admin});
-            if (createdUser === undefined)
-                return res.status(500).send({message: 'Internal server error'});
-            else 
-                return res.status(201).json(createdUser);
-
+        if (createdUser === undefined)
+            return res.status(500).send({message: 'Internal server error'});
+        else 
+            return res.status(201).json(createdUser);
         } catch (e: any) {
-            console.trace(e);
-            return res.status(400).send({message: e.message});
-        }
+            return res.status(400).json({message: e.message});
+        }   
+    
     }
 }

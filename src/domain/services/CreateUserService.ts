@@ -28,7 +28,7 @@ export class CreateUserService {
         const userRepository = getCustomRepository(UserRepository);
 
         if(!name)
-            throw new Error ('Name is an obligatory field and should not be left null');
+            throw new Error('Name is an obligatory field and should not be left null');
         if (!password)
             throw new Error('Password is an obligatory field and should not be left null');
         if(!email)
@@ -47,8 +47,7 @@ export class CreateUserService {
             return user;
 
         } catch (e) {
-            console.trace(e);
-            return undefined;
+            throw e;
         }
     }
     
