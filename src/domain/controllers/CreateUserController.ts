@@ -4,7 +4,7 @@ import { CreateUserService, IUserRequest, IUserResponse } from "../services/Crea
 export class CreateUserController {
    
 
-    static async create(req: Request, res: Response): Promise<IUserResponse | any> {
+    static async handle(req: Request, res: Response): Promise<IUserResponse | any> {
         const {name, email, password, admin}:IUserRequest = req.body;
         const createUserService = new CreateUserService();
         try {

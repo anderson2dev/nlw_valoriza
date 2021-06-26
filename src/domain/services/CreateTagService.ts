@@ -14,7 +14,7 @@ export interface ITagResponse {
 
 
 class CreateTagService {
-    async create({name}: ITagRequest) {
+    async execute({name}: ITagRequest) {
         if (!name) 
             throw new Error('Name is an obligatory field and should not be left null');
         const tagRepository = getCustomRepository(TagsRepository);

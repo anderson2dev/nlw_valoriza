@@ -1,4 +1,4 @@
-require('dotenv').config({path: './POSTGRES_DB.env'})
+require('dotenv').config({path: './POSTGRES_CONFIG.env'})
 
 const conn = {
     "type": "postgres",

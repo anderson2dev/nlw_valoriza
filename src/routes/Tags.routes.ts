@@ -1,10 +1,12 @@
 import {Router} from 'express';
 import { CreateTagController } from '../domain/controllers/CreateTagController';
-import { ensureAdmin } from '../middlewares/EnsureAdmin';
+import  {ListTagsController} from '../domain/controllers/ListTagsController';
+import { ensureAdmin } from '../middlewares/ensureAdmin';
+import { ensureAuthenticated } from '../middlewares/ensureAuthenticated';
 
 const tagsRouter = Router();
 
-tagsRouter.post('/', ensureAdmin, CreateTagController.create);
-
+tagsRouter.post('/', ensureAuthenticated, ensureAdmin, CreateTagController.handle);
+tagsRouter.get('/', ensureAuthenticated, ListTagsController.handle);
 
 export {tagsRouter};
